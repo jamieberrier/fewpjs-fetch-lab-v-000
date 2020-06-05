@@ -9,7 +9,7 @@ In order to give them access, write you solution so that fetchBooks() returns th
 This will not change the behavior of your fetch().
 */
 function fetchBooks() {
-  return fetch('https://anapioficeandfire.com/api/books')
+  return fetch(Access-Control-Allow-Origin: 'https://anapioficeandfire.com/api/books')
   .then(function(response) {
     return response.json();
   })
