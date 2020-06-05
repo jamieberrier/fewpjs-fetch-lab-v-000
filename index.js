@@ -10,7 +10,7 @@ This will not change the behavior of your fetch().
 */
 function fetchBooks() {
   return fetch('https://anapioficeandfire.com/api/books')
-  .then(resp => resp.json())
+  .then(response => response.json())
   .then(json => renderBooks(json))
 }
 
