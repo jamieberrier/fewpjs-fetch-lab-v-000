@@ -10,10 +10,7 @@ This will not change the behavior of your fetch().
 */
 function fetchBooks() {
   return fetch('https://anapioficeandfire.com/api/books', {mode: 'no-cors'})
-  /*.then(response => response.json())*/
-  .then(function(response) {
-    return response.json()
-  })
+  .then(response => response.json())
   .then(json => renderBooks(json));
 }
 
