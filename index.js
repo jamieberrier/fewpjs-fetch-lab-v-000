@@ -11,7 +11,7 @@ This will not change the behavior of your fetch().
 function fetchBooks() {
   return fetch('https://anapioficeandfire.com/api/books', {mode: 'no-cors'})
   .then(function(response) {
-    return response.json()
+    return response.json();
   })
   .then(function(json) {
     renderBooks(json)
