@@ -9,7 +9,7 @@ In order to give them access, write you solution so that fetchBooks() returns th
 This will not change the behavior of your fetch().
 */
 function fetchBooks() {
-  return fetch('https://anapioficeandfire.com/api/books', {mode: 'no-cors'})
+  return fetch('https://anapioficeandfire.com/api/books')
   .then(response => response.json())
   .then(json => renderBooks(json));
 }
