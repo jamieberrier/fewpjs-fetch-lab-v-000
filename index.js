@@ -9,7 +9,13 @@ In order to give them access, write you solution so that fetchBooks() returns th
 This will not change the behavior of your fetch().
 */
 function fetchBooks() {
-
+  fetch('https://anapioficeandfire.com/api/books')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json)
+  });
 }
 
 function renderBooks(json) {
